@@ -5,11 +5,11 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.adr_bundle.databinding.ActivityDetailBinding
 
 class DetailActivity: AppCompatActivity() {
-    private lateinit var binding: DetailActivity
-    override fun onPostCreate(savedInstanceState: Bundle?) {
-        super.onPostCreate(savedInstanceState)
+    private lateinit var binding: ActivityDetailBinding
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
 
-        var binding = ActivityDetailBinding.inflate(layoutInflater)
+        binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val bundle = intent.extras
