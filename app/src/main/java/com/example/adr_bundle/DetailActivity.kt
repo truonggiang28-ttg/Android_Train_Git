@@ -1,4 +1,6 @@
 package com.example.adr_bundle
 
-class DetailActivity {
+import androidx.appcompat.app.AppCompatActivity
+
+class DetailActivity: AppCompatActivity() {
 }
