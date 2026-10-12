@@ -12,8 +12,6 @@ class DetailActivity: AppCompatActivity() {
         binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val bundle = intent.extras
-
         intent.extras?.let { bundle ->
             with(binding){
                 val ht = bundle.getString("key_Name")
