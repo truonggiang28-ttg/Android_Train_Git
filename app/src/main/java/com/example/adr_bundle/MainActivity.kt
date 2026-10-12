@@ -27,5 +27,8 @@ class MainActivity : AppCompatActivity() {
             }
             startActivity(intent)
         }
+    binding.btnHuy.setOnClickListener {
+        finish()
+    }
     }
 }
