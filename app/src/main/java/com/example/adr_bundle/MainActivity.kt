@@ -24,8 +24,9 @@ class MainActivity : AppCompatActivity() {
                         putExtra("key_Date",edtDate.text.toString())
                         putExtra("key_Number",edtNumber.text.toString())
                     }
+                startActivity(intent)
             }
-            startActivity(intent)
+
         }
     binding.btnHuy.setOnClickListener {
         finish()
